@@ -1,4 +1,5 @@
 import { useReducer } from "react"
+import SelectFlight from "./getFly"
 
 type Action = 
 | {type: 'SET_INPUT', field: string, value: string}
@@ -73,21 +74,10 @@ export default function FormData() {
               onSubmit={handleSubmit}
               className="flex items-center justify-center flex-col bg-gray-800 p-8 rounded-lg shadow-lg text-white w-96 h-120 text-[15px]"
             >
-              <h2 className="text-2xl font-bold mb-6 text-center">Reserve seu Voo Espacial 🚀</h2>
-
+              <h2 className="text-2xl font-bold text-center">Reserve seu Voo Espacial</h2>
               {/* Seleção de voo */}
-              <label className="block mb-2">Selecione o voo:</label>
-              <select
-                value={state.voo}
-                onChange={handleChange}
-                name="voo"
-                className="w-full p-2 rounded bg-gray-700 text-white"
-              >
-                <option value="" disabled>Escolha um voo</option>
-                <option value="Falcon 9 - Marte">Falcon 9 - Marte</option>
-                <option value="Starship - Lua">Starship - Lua</option>
-                <option value="Dragon - Estação Espacial">Dragon - Estação Espacial</option>
-              </select>
+              <label className="block mt-4 mb-2">Selecione sua próxima experiência:</label>
+              <SelectFlight />
 
               {/* Nome completo */}
               <label className="block mt-4 mb-2">Nome completo:</label>
