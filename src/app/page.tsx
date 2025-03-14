@@ -3,13 +3,15 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
 import FormData from "@/components/formData"
-
+import Head from "next/head"
 export default function Home() {
   const text : string = "GoSpace"
   const subText: string = "Sua jornada nas estrelas começa aqui"
   const [isform, setIsForm] = useState(false)
   
   return (
+    <>
+    <Head>GoSpace</Head>
     <div>
       <section
         className = "inset-0 relative w-full h-[300px] bg-[url('/background-page.jpg')] bg-cover bg-center text-3xl flex flex-col items-center justify-center h-screen"
@@ -94,6 +96,6 @@ export default function Home() {
         <p className="absolute bottom-2 right-2 text-[10px] text-white opacity-70"><a href="https://br.freepik.com/fotos-gratis/panorama-noturno-da-galaxia_13140054.htm#fromView=search&page=3&position=27&uuid=f5d28b5c-4ede-49d9-8e9d-5fca44a3122f&query=espa%C3%A7o+sideral+com+estrelas">Imagem de freepik</a></p>
       </section>
     </div>
- 
+    </>
   )
 }
