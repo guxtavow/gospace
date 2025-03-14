@@ -15,7 +15,8 @@ export default function Home() {
         className = "inset-0 relative w-full h-[300px] bg-[url('/background-page.jpg')] bg-cover bg-center text-3xl flex flex-col items-center justify-center h-screen"
       >
       {isform ? (
-       <> {/* forms */}
+       <> 
+       {/* forms */}
          {/* Container do forms para animação */}
         <motion.div
         initial={{ scale: 0, y: -40 }}
@@ -46,7 +47,6 @@ export default function Home() {
             transition={{ duration: 1.5, ease: "easeOut", delay: index * 0.1 }} 
             className="text-[14vw] font-bold relative text-white"
           >
-
             <motion.span
               animate={{opacity:[1, 0.4 ,1], y: 0 }}
               transition={{ duration: 2.3, ease: "easeInOut", repeat: Infinity, repeatDelay: 2.8, delay: 1.1 + index * 0.3 }}
