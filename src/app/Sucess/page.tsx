@@ -75,7 +75,12 @@
                             )}
                         </section>
                     </motion.div>
-                </section>
+                    <button
+                        className="flex items-center justify-center w-[9vw] h-[7vh] m-[16px] text-[1vw] text-white font-bold cursor-pointer bg-blue-500 rounded-[20px] hover:bg-blue-700 hover:text-white hover:scale-105 transition duration-500 ease-in-out"
+                        onClick={() => window.history.back()}
+                        >Voltar
+                    </button>
+                </section>            
                 </div>
             </div>
         )

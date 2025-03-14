@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Projeto GoSpace
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+Este projeto exibe informações detalhadas sobre voos espaciais utilizando dados obtidos via API. A aplicação foi desenvolvida em **Next.js** com **React** e utiliza **Framer Motion** para animações.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Next.js** (React)
+* **Typescript**
+* **Framer Motion** (Animações)
+* **Tailwind CSS** (Estilização)
+* **API SpaceX** (Para obtenção de dados de lançamentos)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✅ Consumo da **API SpaceX** para obter detalhes sobre lançamentos.
+✅ Exibição de informações como **nome do voo, data e link para webcast**.
+✅ Animações com **Framer Motion** para uma experiência mais dinâmica.
+✅ Design responsivo utilizando **Tailwind CSS**.
 
-## Learn More
+## Instalação e Uso
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone o repositório**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```
+   git clone https://github.com/seu-usuario/nome-do-projeto.git
+   ```
+2. **Acesse a pasta do projeto**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```
+   cd gospace
+   ```
+3. **Instale as dependências**:
 
-## Deploy on Vercel
+   ```
+   npm install
+   ```
+4. **Execute o projeto**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   npm run dev
+   ```
+5. **Acesse no navegador:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+   http://localhost:3000
+   ```
+
+## Como funciona?
+
+1. O usuário acessa a aplicação e visualiza uma lista de lançamentos.
+2. Ao selecionar um lançamento, ele é redirecionado para a página de sucesso.
+3. Na página de sucesso, são exibidos detalhes do voo, incluindo **nome do voo, data, insignia e link para webcast**.
+4. Caso haja uma **imagem de patch** associada ao voo, ela será exibida.
+
+## Status do projeto
+Finalizado
